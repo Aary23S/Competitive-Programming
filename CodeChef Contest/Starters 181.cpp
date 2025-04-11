@@ -1,4 +1,4 @@
-Code Chef Contest Starters 181 rated on : 9 April 2025 
+Code Chef Contest Starters 181 rated on: 9 April 2025 
 
 Problem 1: Move Grid
 #include <bits/stdc++.h>
@@ -14,7 +14,8 @@ int main() {
     cout<<x<<" "<<y;
 }
 
-_________________________________________________________
+//_________________________________________________________
+
 Problem 2: Breaking Sticks
 #include <iostream>
 #include<bits/stdc++.h>
@@ -52,7 +53,9 @@ int main() {
 
 	return 0;
 }
-_________________________________________________________
+
+//_________________________________________________________
+
 Problem 3: Flip Prefix
 #include <bits/stdc++.h>
 using namespace std;
@@ -93,4 +96,5 @@ int main() {
 	}
    return 0;
 }
-_________________________________________________________
+
+//_________________________________________________________
