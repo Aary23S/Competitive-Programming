@@ -1,4 +1,4 @@
-Code Forces Contest Div 3 on : 3 April 2025
+Code Forces Contest Div 2 on : 3 April 2025
 
 A. Cloudberry Jam
 
