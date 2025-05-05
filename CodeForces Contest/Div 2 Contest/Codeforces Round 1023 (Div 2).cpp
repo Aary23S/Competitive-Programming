@@ -60,3 +60,46 @@ int main() {
     }
     return 0;
 }
+
+
+//problem B:https://codeforces.com/contest/2107/problem/B
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int n, k;
+        cin >> n >> k;
+        vector<int> a(n);
+        unordered_map<int, int> freq;
+        ll sum = 0;
+
+        for (int i = 0; i < n; ++i) {
+            cin >> a[i];
+            freq[a[i]]++;
+            sum += a[i];
+        }
+
+        int max_a = *max_element(a.begin(), a.end());
+        int min_a = *min_element(a.begin(), a.end());
+
+        if (max_a - min_a > k + 1) {
+            cout << "Jerry\n";
+        }
+        else if (max_a - min_a == k + 1) {
+            if (freq[max_a] == 1) {
+                cout << ((sum % 2 == 1) ? "Tom\n" : "Jerry\n");
+            } else {
+                cout << "Jerry\n";
+            }
+        }
+        else {
+            cout << ((sum % 2 == 1) ? "Tom\n" : "Jerry\n");
+        }
+    }
+
+    return 0;
+}
